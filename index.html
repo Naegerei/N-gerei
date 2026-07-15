@@ -1,1 +1,150 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naegerei</title>
+    <style>
+        /* Grundlegendes Schwarz-Weiß-Design */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000000;
+            color: #ffffff;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
 
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        /* Header-Bereich: Überschrift und Bild nebeneinander */
+        header {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 2px solid #ffffff;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+            gap: 20px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin: 0;
+            text-transform: uppercase;
+        }
+
+        .header-img {
+            max-width: 150px;
+            height: auto;
+            border: 2px solid #ffffff;
+            background-color: #111;
+        }
+
+        /* Hauptinhalt: Angebote */
+        main {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            border-bottom: 1px solid #ffffff;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+
+        /* Angebote-Grid (nebeneinander auf PC, untereinander auf Smartphone) */
+        .offers {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .offer-card {
+            border: 1px solid #ffffff;
+            padding: 20px;
+            background-color: #111111;
+        }
+
+        .offer-card h3 {
+            margin-top: 0;
+        }
+
+        /* Footer-Bereich: Kontaktinformationen */
+        footer {
+            border-top: 2px solid #ffffff;
+            padding-top: 20px;
+            font-size: 0.9rem;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .contact-info a {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+
+        /* Responsive Anpassungen für Smartphones */
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>Nägerei</h1>
+            <img class="header-img" src="Baumwolle.png" alt="Beispiel PNG">
+        </header>
+
+        <main>
+            <h2>Unsere Angebote</h2>
+            <div class="offers">
+                <div class="offer-card">
+                    <h3>Verkauf</h3>
+                    <p>Jung 1# = Verhandelbahr<br>Alt 1# = Verhandelbahr</p>
+                </div>
+                <div class="offer-card">
+                    <h3>Service</h3>
+                    <p>Wir bringen ihn wider in vollste Ordnung</p>
+                </div>
+                <div class="offer-card">
+                    <h3>Versand</h3>
+                    <p>5,00 € pro KM</p>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <h3>Kontakt</h3>
+            <div class="contact-info">
+                <span><strong>E-Mail:</strong> <a href="naegerei@outlook.de">naegerei@outlook.de</a></span>
+                <span><strong>Telefon:</strong> <a href="+49 30 5554 982">+49 30 5554 982</a></span>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+</html>
