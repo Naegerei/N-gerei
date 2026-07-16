@@ -38,7 +38,8 @@
         /* Grundlegendes Design mit Hintergrundbild */
         body {
             font-family: Arial, sans-serif;
-            background-image: url('schwarz'); /* Hier den Pfad zu deinem Hintergrundbild eintragen */
+            /* Ersetze 'hintergrund.png' mit dem genauen Dateinamen deines Hintergrundbildes */
+            background-image: url('hintergrund.png'); 
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -57,7 +58,7 @@
             border-radius: 8px;
         }
 
-        /* Header-Bereich: Bild links, Überschrift Mitte, Bild rechts */
+        /* Header-Bereich: Überschrift links/mittig und Bild rechts */
         header {
             display: flex;
             flex-direction: row;
@@ -73,7 +74,7 @@
             font-size: 2.5rem;
             margin: 0;
             text-transform: uppercase;
-            text-align: center;
+            text-align: left; /* Überschrift richtet sich links aus */
             flex-grow: 1;
         }
 
@@ -143,7 +144,7 @@
 
             h1 {
                 font-size: 2rem;
-                order: -1; /* Überschrift wandert auf dem Handy nach oben */
+                text-align: center;
             }
 
             .contact-info {
@@ -162,10 +163,7 @@
     <div class="container">
 
         <header>
-            <img class="header-img" src="links.png" alt="Zweites Bild">
-            
             <h1>Nägerei</h1>
-            
             <img class="header-img" src="Baumwolle.png" alt="Beispiel PNG">
         </header>
 
